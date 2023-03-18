@@ -1,5 +1,9 @@
 ## Process
 - step 1: project initialized
+  ```
+  npx react-native init deliveroo
+  cd deliveroo
+  ```
 - step 2: added tailwind dependencies
   ```
   npm install nativewind
