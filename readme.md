@@ -91,3 +91,17 @@
     )
   }
 ```
+
+- step 4: working on HomeScreen
+  install react native heroicons
+  ```
+  npm i react-native-heroicons
+  ```
+
+
+  if you can not use this icons, do the followin step
+  ```
+  npm install react-native-svg
+  npm install react-native-svg-transformer
+  ```
+  
