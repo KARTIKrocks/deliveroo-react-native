@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, Image, TextInput } from 'react-native'
+import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsHorizontalIcon } from 'react-native-heroicons/outline'
@@ -38,12 +38,20 @@ export default function HomeScreen() {
       {/* Search */}
       <View className='flex-row items-center space-x-2 pb-2 mx-4 px-1'>
         <View className='flex-row items-center flex-1 space-x-2 bg-gray-200 px-2 py-0 rounded-md'>
-          <MagnifyingGlassIcon size={20} color="#00CCBB"/>
+          <MagnifyingGlassIcon size={20} color="#00CCBB" />
           <TextInput placeholder='Restaurants and cuisines' keyboardType='default' />
         </View>
 
         <AdjustmentsHorizontalIcon color="#00CCBB" />
       </View>
+
+      {/* Body  */}
+      <ScrollView>
+        {/* Categories  */}
+
+        {/* Features Rows  */}
+        
+      </ScrollView>
 
     </SafeAreaView>
   )
