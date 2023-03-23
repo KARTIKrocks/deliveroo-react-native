@@ -1,19 +1,16 @@
-import { Text, TouchableOpacity, Image, View } from 'react-native'
-import React from 'react'
+import { Text, TouchableOpacity, Image } from 'react-native'
+import React, { PropsWithChildren } from 'react'
 
-type CategoryCardProps = {
+type CategoryCardProps = PropsWithChildren<{
   imgUrl: string
   title: string
-}
+}>
 
 const CategoryCard = ({ imgUrl, title }: CategoryCardProps) => {
   return (
     <TouchableOpacity className=' mr-2'>
-      <Text>loading image</Text>
       <Image
-        source={{
-          uri: imgUrl,
-        }}
+        source={{ uri: imgUrl }}
         className="h-20 w-20 rounded"
       />
       <Text className='absolute bottom-1 left-1 text-white font-bold'>
